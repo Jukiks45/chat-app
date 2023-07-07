@@ -1,72 +1,93 @@
-html,
-body {
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
-    margin: 0;
-}
-
-#root {
-    height: 100vh;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.joinOuterContainer {
+.containerjoin {
     display: flex;
     justify-content: center;
-    text-align: center;
-    height: 100vh;
     align-items: center;
-    background-color: #1A1A1D;
+    height: 100vh;
+    background-color: #222;
+
 }
 
-.joinInnerContainer {
-    width: 20%;
+.form-container {
+    width: 37%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
 }
 
-.joinInput {
-    border-radius: 0;
-    padding: 15px 20px;
-    width: 100%;
+.h1join {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    /* color: #b38bff; */
 }
 
-.heading {
-    color: white;
-    font-size: 2.5em;
-    padding-bottom: 10px;
-    border-bottom: 2px solid white;
+.formjoin {
+    display: flex;
+    flex-direction: column;
 }
 
-.button {
-    color: #fff !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #2979FF;
-    padding: 20px;
-    border-radius: 5px;
-    display: inline-block;
+.labeljoin {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.inputjoin {
+    padding: 12px;
     border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #555;
+}
+
+.buttonjoin {
+    padding: 10px;
+    background-color:  #2979FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 50%;
+    margin: auto;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* button:hover {
+    background-color: #8c5fb2;
+} */
+
+.ajoin {
+    text-decoration: none;
+    /* color: #b38bff; */
+    font-size: 18px;
     width: 100%;
+    display: flex;
+    transition: color 0.2s ease-in-out;
 }
 
-.mt-20 {
-    margin-top: 20px;
+/* a:hover {
+    color: #8c5fb2;
+} */
+
+.pjoin {
+    text-align: center;
+    margin: 8px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-    .joinOuterContainer {
-        height: 100%;
+@media (min-width: 300px) and (max-width: 1200px) {
+    .form-container {
+        width: 100%;
+        /* margin: 0 auto; */
+        padding: 16px;
+        background-color: #333;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        margin: auto 8px;
     }
-
-    .joinInnerContainer {
-        width: 90%;
-    }
-
-
-}
-
-button:focus {
-    outline: 0;
 }
